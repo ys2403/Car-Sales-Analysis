@@ -1,4 +1,11 @@
+
+
 # Car Sales Dashboard using Power BI  
+
+## View the Project  
+You can view the interactive Car Sales Dashboard [here](https://app.powerbi.com/view?r=eyJrIjoiYzZiMzJmYjctNzYwZi00M2ZiLTljMTQtYWFjYWQ4MjAwMWU2IiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9).
+
+---
 
 ## Project Overview  
 This project focuses on building an interactive **Car Sales Dashboard** with Power BI to monitor and analyze sales performance metrics effectively. It delivers meaningful insights into sales patterns, empowering the business to track progress and make data-driven decisions. The dashboard visualizes various KPIs across multiple dimensions, including time, price, regions, and car specifications.
@@ -60,8 +67,32 @@ To better understand performance trends, several interactive visualizations are 
 
 ---
 
-## Conclusion  
-This Car Sales Dashboard will serve as a **powerful tool for sales monitoring and strategic planning**. By analyzing sales trends and KPIs through intuitive charts and grids, the company can quickly identify growth opportunities and areas needing attention.
+## Key Learnings  
+
+- **Using DAX (Data Analysis Expressions):**  
+  DAX is a powerful formula language used in Power BI to create custom calculations. For example, to calculate the Year-to-Date (YTD) Total Sales, you might use the following DAX expression:
+  ```dax
+  YTD Total Sales = CALCULATE(SUM(Sales[TotalSales]), DATESYTD(Sales[Date]))
+  ```
+
+- **Adding Relationships in Power BI:**  
+  Relationships between tables in Power BI are established in the **Model** view. For instance, to link a **Sales** table to a **Cars** table using a common **CarID**:
+  1. Go to the **Model** view.
+  2. Drag the **CarID** field from the **Sales** table to the **CarID** field in the **Cars** table.
+  3. Ensure that the relationship type is set correctly (e.g., one-to-many).
+
+
+- **Creating a Calendar Table using the CALENDAR function:**  
+  Creating a calendar table is essential for time-based analysis. You can create a calendar table with the following DAX code:
+  ```dax
+  CalendarTable = CALENDAR(MIN(Sales[Date]), MAX(Sales[Date]))
+  ```
+  After creating the table, you can add additional columns to this calendar table for year, month, and day:
+  ```dax
+  Year = YEAR(CalendarTable[Date])
+  Month = FORMAT(CalendarTable[Date], "MMMM")
+  Day = DAY(CalendarTable[Date])
+  ```
 
 ---
 
@@ -71,8 +102,5 @@ This Car Sales Dashboard will serve as a **powerful tool for sales monitoring an
 
 ---
 
-## How to Run  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/car-sales-dashboard.git
-   cd car-sales-dashboard
+## Conclusion  
+This Car Sales Dashboard will serve as a **powerful tool for sales monitoring and strategic planning**. By analyzing sales trends and KPIs through intuitive charts and grids, the company can quickly identify growth opportunities and areas needing attention.
