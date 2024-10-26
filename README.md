@@ -67,7 +67,7 @@ This Car Sales Dashboard will serve as a **powerful tool for sales monitoring an
 
 ## Technologies Used  
 - **Power BI** for visualization and dashboard development.  
-- **Excel/CSV** files or **SQL databases** as data sources.  
+- **Excel/CSV** file as data sources.  
 
 ---
 
