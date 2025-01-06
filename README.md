@@ -1,4 +1,4 @@
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
 
 
 # Car Sales Dashboard using Power BI  
@@ -7,7 +7,7 @@
 You can view the interactive Car Sales Dashboard [here](https://app.powerbi.com/view?r=eyJrIjoiYzZiMzJmYjctNzYwZi00M2ZiLTljMTQtYWFjYWQ4MjAwMWU2IiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9).
 
 ---
-
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ## Project Overview  
 This project focuses on building an interactive **Car Sales Dashboard** with Power BI to monitor and analyze sales performance metrics effectively. It delivers meaningful insights into sales patterns, empowering the business to track progress and make data-driven decisions. The dashboard visualizes various KPIs across multiple dimensions, including time, price, regions, and car specifications.
 
