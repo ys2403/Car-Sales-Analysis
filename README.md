@@ -1,8 +1,5 @@
-
-
-
 # Car Sales Dashboard using Power BI  
-
+Creating a dashboard using POWER BI Tool
 ## View the Project  
 You can view the interactive Car Sales Dashboard [here](https://app.powerbi.com/view?r=eyJrIjoiYzZiMzJmYjctNzYwZi00M2ZiLTljMTQtYWFjYWQ4MjAwMWU2IiwidCI6ImQxNzU2NzliLWFjZDMtNDY0NC1iZTgyLWFmMDQxOTgyOTc3YSIsImMiOjZ9).
 
